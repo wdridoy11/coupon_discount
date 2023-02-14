@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Discount</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+   <!-- coupon discount section design start -->
+   <main class="w-full md:w-1/2 lg:w-2/6 mx-auto">
+      <section class="bg-white shadow-lg p-8 rounded-lg mx-2 md:mx-0">
+         <h2 class="text-3xl text-black font-semibold mb-5">Price: <span id="price">1000</span></h2>
+         <h4 class="text-base text-black font-medium mb-1">Enter Coupon Code:</h4>
+         <div class="flex gap-3">
+            <input class="border border-gray-300 px-2 focus:outline-none w-1/2" id="coupon" type="text"
+               placeholder="Enter your Coupon" required>
+            <button class="bg-red-400 text-white font-medium px-5 py-2 cursor-pointer" id="apply-btn">Apply Now</button>
+         </div>
+         <p class="text-red-500 text-base font-medium mb-3" id="wrong-code"></p>
+         <h1 class="font-semibold text-black text-lg" id="discountPrice"></h1>
+      </section>
+   </main>
+   <!-- coupon discount section design end -->
+   <script src="./app.js"></script>
+</body>
+
+</html>
